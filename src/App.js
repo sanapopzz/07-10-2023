@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Logindata from './components/login/Logindata';
 import Home from './components/Home/Home';
 import Book from './components/book/Book';
+import Bookview from './components/book/Bookview';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
       <Route path={'/Course'} element={<Course/>}></Route> 
       <Route path={'/Home'} element={<Home/>}></Route>
        <Route path={'/Book'} element={<Book/>}></Route> 
+       <Route path={'/v'} element={<Bookview/>}></Route> 
+
 
       </Routes>      
     </BrowserRouter>
@@ -30,6 +33,7 @@ function App() {
       {/* <Course/> */}
       {/* <Logindata/> */}
       {/* <Home/> */}
+      
       
       
     </div>

@@ -37,16 +37,16 @@ const Book = () => {
                 auther:au,
                 publisher:pu
             }
-            fetch("https://sampledbcs-ab1b8-default-rtdb.firebaseio.com/SampleDBCS"),
+            fetch("https://sampledbcs-9685d-default-rtdb.firebaseio.com/Book.json",
             {
-                method:"post",
+                method:"POST",
                 body:JSON.stringify(myobj),
-                headers:{"content-Type":"application.json"
-        
+                headers:{"content-Type":"application.json",
                 }
-        }
     }
-    
+    );
+    alert("Record saved")
+    }
     }
   return (
     <div>
